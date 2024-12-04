@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Поддержка адаптивности для мобильных устройств -->
+    <title>Контакты - Ведьмак 3</title>
+    <!-- Подключение стилей Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ведьмак 3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Об игре</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters.html">Персонажи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.html">Локации</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://store.steampowered.com/app/292030/Vedmak_3_Dikaya_Oxota/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1024px-Steam_icon_logo.svg.png" width="40" height="40">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Книги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент с формами -->
+    <main class="container mt-4">
+        <h1>Контакты</h1>
+        
+        <h2>Отправить личные данные</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="surname" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="surname" name="surname" value="Иванов">
+            </div>
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" value="Иван">
+            </div>
+            <div class="mb-3">
+                <label for="group" class="form-label">Группа</label>
+                <input type="text" class="form-control" id="group" name="group" value="БИ-101">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Мобильный телефон</label>
+                <input type="tel" class="form-control" id="phone" name="phone" value="+71234567890">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Электронная почта</label>
+                <input type="email" class="form-control" id="email" name="email" value="ivanov@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="send_date" class="form-label">Дата отправки</label>
+                <input type="date" class="form-control" id="send_date" name="send_date" value="2024-01-01">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+
+        <h2 class="mt-4">Оставить отзыв</h2>
+        <form id="reviewForm">
+            <div class="mb-3">
+                <label for="review" class="form-label">Ваш отзыв</label>
+                <input type="text" class="form-control" id="review" name="review" value="Отличная игра!">
+            </div>
+            <div class="mb-3">
+                <label for="rating" class="form-label">Оценка</label>
+                <input type="number" class="form-control" id="rating" name="rating" min="1" max="5" value="5">
+            </div>
+            <div class="mb-3">
+                <label for="terms" class="form-label">Принять условия</label>
+                <input type="checkbox" class="form-check-input" id="terms" name="terms" checked>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Пол</label><br>
+                <input type="radio" class="form-check-input" name="gender" value="male" checked> Мужской
+                <input type="radio" class="form-check-input" name="gender" value="female"> Женский
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Пароль</label>
+                <input type="password" class="form-control" id="password" name="password" value="12345">
+            </div>
+            <input type="hidden" name="user_id" value="12345">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </main>
+
+    <!-- Скрытая форма для отправки данных на сервер -->
+    <form id="hiddenForm" action="https://www.bing.com/search?" method="get" target="_blank" style="display:none;">
+        <input type="hidden" name="q" id="serverQuery">
+    </form>
+
+    <!-- Подключение JS для Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb2s3LiELXlmBx5v7d/3ZG6y5QpmmKRSy3z++jkpZzU47z2DS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqE68jXyQoM4a7Uowm9zYoF0f3rd0p3wWq0zS4V4Zmpt9" crossorigin="anonymous"></script>
+
+    <script>
+        // Обработчик формы "Контакты"
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            const formData = new FormData(this);
+
+            // Преобразуем данные формы в строку
+            let formDataString = '';
+            formData.forEach((value, key) => {
+                formDataString += `${key}: ${value}, `;
+            });
+
+            // Отправка данных через скрытую форму
+            sendDataToServer(formDataString);
+        });
+
+        // Обработчик формы "Отзыв"
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            // Преобразуем данные формы в строку
+            let formDataString = '';
+            formData.forEach((value, key) => {
+                formDataString += `${key}: ${value}, `;
+            });
+
+            // Отправка данных через скрытую форму
+            sendDataToServer(formDataString);
+        });
+
+        // Функция отправки данных через скрытую форму
+        function sendDataToServer(data) {
+            // Наполнение скрытой формы данными
+            document.getElementById('serverQuery').value = data;
+
+            // Отправка формы на сервер
+            document.getElementById('hiddenForm').submit();
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Указание кодировки страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Поддержка адаптивности для мобильных устройств -->
+    <title>Персонажи Ведьмака 3</title>
+    <!-- Подключение CSS файла для стилизации -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Общие стили для всех экранов */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Адаптивность для малых экранов (например, смартфоны) */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+
+            img {
+                width: 80px; /* Уменьшаем изображения для мобильных */
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Адаптивность для очень маленьких экранов (например, экраны телефонов) */
+        @media (max-width: 480px) {
+            table {
+                font-size: 12px;
+            }
+
+            img {
+                width: 60px;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+        }
+
+        /* Стиль для кнопки "Наверх" */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        /* Показ кнопки "Наверх" при скроллинге */
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html" class="active">Об игре</a></li>
+            <li><a href="characters.html">Персонажи</a></li>
+            <li><a href="locations.html">Локации</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li>
+                <a href="https://store.steampowered.com/app/292030/Vedmak_3_Dikaya_Oxota/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1024px-Steam_icon_logo.svg.png" width="40" height="40">
+                </a>
+            </li>
+            <li><a href="books.html">Книги</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Персонажи игры "Ведьмак 3: Дикая Охота"</h1>
+        <table>
+            <tr>
+                <th>Персонаж</th>
+                <th>Роль</th>
+                <th>Описание</th>
+                <th>Изображение</th>
+            </tr>
+            <tr>
+                <td>Геральт из Ривии</td>
+                <td>Главный герой</td>
+                <td>Ведьмак, охотник на монстров, мастер меча и магии.</td>
+                <td>
+                    <a href="https://i.pinimg.com/originals/71/65/ec/7165ecd255243908a6194a8c234e916e.jpg" target="_blank" title="Геральт из Ривии: Ведьмак, охотник на монстров, мастер меча и магии.">
+                        <img src="https://i.pinimg.com/originals/71/65/ec/7165ecd255243908a6194a8c234e916e.jpg" alt="Геральт из Ривии">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Йеннифер из Венгерберга</td>
+                <td>Возлюбленная Геральта</td>
+                <td>Могущественная чародейка и одна из членов Ложи Чародеек.</td>
+                <td>
+                    <a href="https://i.pinimg.com/736x/01/de/bd/01debd90b8fd71785e889c87cf170a10--yennefer-witcher-the-witcher.jpg" target="_blank" title="Йеннифер из Венгерберга: Могущественная чародейка и член Ложи Чародеек.">
+                        <img src="https://i.pinimg.com/736x/01/de/bd/01debd90b8fd71785e889c87cf170a10--yennefer-witcher-the-witcher.jpg" alt="Йеннифер из Венгерберга">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Цири</td>
+                <td>Приемная дочь Геральта</td>
+                <td>Дитя Старшей Крови, способная путешествовать между мирами и измерениями.</td>
+                <td>
+                    <a href="https://steamuserimages-a.akamaihd.net/ugc/780732374531303441/AF2135ECFD69596DC7F5A6AB4607B4B0D0575323/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" target="_blank" title="Цири: Дитя Старшей Крови, способная путешествовать между мирами.">
+                        <img src="https://steamuserimages-a.akamaihd.net/ugc/780732374531303441/AF2135ECFD69596DC7F5A6AB4607B4B0D0575323/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" alt="Цири">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Трисс Меригольд</td>
+                <td>Подруга Геральта</td>
+                <td>Чародейка, обладающая добрым сердцем, важный член Ложи Чародеек.</td>
+                <td>
+                    <a href="https://avatars.mds.yandex.net/i?id=558bc24a70e14be30190ca34f44df10c_l-4557470-images-thumbs&n=13" target="_blank" title="Трисс Меригольд: Добрая чародейка, важный член Ложи Чародеек.">
+                        <img src="https://avatars.mds.yandex.net/i?id=558bc24a70e14be30190ca34f44df10c_l-4557470-images-thumbs&n=13" alt="Трисс Меригольд">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Эмгыр вар Эмрейс</td>
+                <td>Император Нильфгаарда</td>
+                <td>Властитель Нильфгаардской империи, жестокий и амбициозный правитель.</td>
+                <td>
+                    <a href="https://avatars.mds.yandex.net/i?id=5bd47c2493b76a27235a05e46fb045258b27d6b9-6357036-images-thumbs&n=13" target="_blank" title="Эмгыр вар Эмрейс: Жестокий и амбициозный император Нильфгаарда.">
+                        <img src="https://avatars.mds.yandex.net/i?id=5bd47c2493b76a27235a05e46fb045258b27d6b9-6357036-images-thumbs&n=13" alt="Эмгыр вар Эмрейс">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Весемир</td>
+                <td>Мастер ведьмаков</td>
+                <td>Старейший и опытнейший ведьмак, наставник и друг Геральта.</td>
+                <td>
+                    <a href="https://yt3.googleusercontent.com/TxoH7OvwISbA2yAfSJNNh8jrWRDEmC7WQ31NZfh_rlP6Q5lHcTWO_hJq1qrfTQFlnW_SBq9Jdw=s900-c-k-c0x00ffffff-no-rj" target="_blank" title="Весемир: Старейший и опытнейший ведьмак, наставник Геральта.">
+                        <img src="https://yt3.googleusercontent.com/TxoH7OvwISbA2yAfSJNNh8jrWRDEmC7WQ31NZfh_rlP6Q5lHcTWO_hJq1qrfTQFlnW_SBq9Jdw=s900-c-k-c0x00ffffff-no-rj" alt="Весемир">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- Кнопка Наверх -->
+    <a href="#" class="back-to-top" id="back-to-top">Наверх</a>
+
+    <!-- Подключение Bootstrap JS и зависимостей -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb2s3LiELXlmBx5v7d/3ZG6y5QpmmKRSy3z++jkpZzU47z2DS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqE68jXyQoM4a7Uowm9zYoF0f3rd0p3wWq0zS4V4Zmpt9" crossorigin="anonymous"></script>
+
+    <script>
+        // Показывать кнопку "Наверх" при прокрутке страницы
+        window.onscroll = function() {
+            var button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Прокрутка до верха
+        document.getElementById("back-to-top").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
+

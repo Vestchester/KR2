@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об игре - Ведьмак 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .active {
+            font-weight: bold;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        /* Стили для кнопки "Наверх" */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #7b1111;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Кнопка будет отображаться только при прокрутке вниз */
+            transition: opacity 0.3s;
+        }
+
+        #backToTop:hover {
+            background-color: #9e1414;
+        }
+
+        /* Медиа-запросы для адаптивности */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            #backToTop {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html" class="active">Об игре</a></li>
+            <li><a href="characters.html">Персонажи</a></li>
+            <li><a href="locations.html">Локации</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="https://store.steampowered.com/app/292030/Vedmak_3_Dikaya_Oxota/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1024px-Steam_icon_logo.svg.png" width="40" height="40"></a></li>
+            <li><a href="books.html">Книги</a></li>
+        </ul>
+    </nav>
+
+    <!-- Контент страницы -->
+    <main>
+        <h1>Об игре "Ведьмак 3: Дикая Охота"</h1>
+
+        <nav>
+            <h2>Навигация по странице</h2>
+            <ul>
+                <li><a href="#introduction">Введение</a></li>
+                <li><a href="#gameplay">Геймплей</a></li>
+                <li><a href="#story">Сюжет</a></li>
+            </ul>
+        </nav>
+
+        <!-- Введение -->
+        <section id="introduction">
+            <h2>Введение</h2>
+            <p>"Ведьмак 3: Дикая Охота" — это культовая ролевая игра с открытым миром, созданная польской студией CD Projekt Red. Игра вышла в 2015 году и получила высокие оценки за сложный мир, глубокие персонажи и многослойную сюжетную линию. Главный герой, Геральт из Ривии, отправляется в опасное путешествие, чтобы найти свою пропавшую дочь Цири, обладающую магической силой, которую преследуют могущественные силы.</p>
+            <p>Игра сочетает элементы фэнтези, мифологии и средневековой истории, создавая уникальную атмосферу, которая захватывает с первых минут игры. Каждое решение игрока влияет на дальнейшее развитие событий, от чего делает мир игры еще более живым и непредсказуемым.</p>
+        </section>
+
+        <!-- Геймплей -->
+        <section id="gameplay">
+            <h2>Геймплей</h2>
+            <p>Геймплей в "Ведьмак 3" — это насыщенная и многослойная система, которая включает в себя элементы исследования, боевой системы, крафта и прокачки персонажа. Игрок может свободно перемещаться по огромному открытому миру, исследовать города, леса, болота и различные подземелья. По пути Геральт встречает множество персонажей, с которыми ему предстоит взаимодействовать, делать моральные выборы и влиять на судьбы целых народов.</p>
+            <p>Боевые механики игры проработаны до мельчайших деталей. В арсенале Геральта есть магия, мечи, арбалеты, зелья и разнообразные эликсиры. Кроме того, игрок может улучшать способности героя, создавая более мощное оружие и брони, а также использовать алхимию для создания зелий, помогающих в бою.</p>
+            <p>Кроме того, игра предлагает разнообразные побочные задания и мини-игры, такие как популярная карточная игра Гвинт, которая привлекла внимание своей увлекательностью и стратегией.</p>
+        </section>
+
+        <!-- Сюжет -->
+        <section id="story">
+            <h2>Сюжет</h2>
+            <p>Основной сюжет игры посвящен поискам Цири, дочери Геральта. Она находится в центре конфликта между людьми и магическими существами, и её способности могут изменить ход войны. Путешествие Геральта приводит его в опасные места, где ему предстоит сражаться с чудовищами, участвовать в политических интригах и делать сложные моральные выборы, каждый из которых может повлиять на развитие событий.</p>
+            <p>Сюжет "Ведьмака 3" погружает игроков в сложный мир, где нет четкой грани между добром и злом. Каждый выбор имеет последствия, и результат игры зависит от решений, которые принимает сам игрок.</p>
+        </section>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="backToTop" onclick="scrollToTop()">Наверх</button>
+
+    <!-- Скрипт для прокрутки вверх и отображения кнопки при скролле -->
+    <script>
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
